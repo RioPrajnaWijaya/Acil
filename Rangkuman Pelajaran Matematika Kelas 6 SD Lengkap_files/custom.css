@@ -1,0 +1,13 @@
+a:visited, a:hover, a:focus, .post h2 a, #sidebar a, #sidebar .recent a,#crp_related ul li a, h1.title, #sidebar h3.title span { color: #212121;}
+#featured .right h3.title span { color: #ffffff; }
+#header .head .title a:hover, .related_posts h4 a:hover { color: #000000;}
+#sidebar h4.title span, h4.title span { background: #e2e2e2; background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #f2f2f2, #e2e2e2) repeat scroll 0 0;}
+#sidebar h4.title span, .searchform, h4.title span { border:1px solid #c0c0c0; }
+#wrap { background: #ffffff; }
+#wrap-header { background: #f0e0e6; background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #87ceeb, #f0e0e6) repeat scroll 0 0; }
+#wrap-menu, #main-menu, .searchform button { background: #8b0000; background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #ff0000, #8b0000) repeat scroll 0 0; }
+#wrap-sidebar { background: #add8e6; }
+#wrap-footer { background: #00008B; background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #191970, #00008B) repeat scroll 0 0; }
+#wrap-breadcrumbs { background: #ffffff; }
+#main-menu .main-menu li a:hover, #main-menu .main-menu li.current-menu-item a, #main-menu .main-menu li.current-post-parent a, #main-menu .main-menu li li a:hover,.main-menu li li a:active, .related_posts h3, #fb-comments h5, #featured .right h3.title, .entry-gallery h2.title, .attachment h2.title span { background: #3d3d3d; background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #3d3d3d, #282828) repeat scroll 0 0; }
+#featured .left .desc, #featured .bottom ul li .meta { background: rgba(1, 142, 107, 0.8); }

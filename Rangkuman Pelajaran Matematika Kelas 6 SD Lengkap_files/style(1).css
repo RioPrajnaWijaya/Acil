@@ -1,0 +1,382 @@
+/*
+Theme Name: Materi Lightbox Theme
+Theme URI: http://pustakamateri.we.id
+Description: Premium Wordpress Theme for Pustaka Materi.
+Author: Dwijo Utomo
+Author URI: http://pustakamateri.we.id/
+Version: 1.0
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu (optional)
+*/
+
+/* ----------------------------------------------------- START RESET CSS-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	background: #fff;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a:focus {
+	outline: thin dotted;
+}
+a:hover,
+a:active {
+	outline: 0;
+}
+a img {
+	border: 0;
+}
+.clearfix {
+	clear:both
+}
+
+/* ------------------------------------------- START GLOBAL CSS ------------------------------------------- */
+
+a { text-decoration: none; }
+a:link { text-decoration: none; }
+a:visited {  }
+a:hover { text-decoration: none; }
+a:focus { outline: none; }
+h1 { font-size: 18px; }
+h2 { font-size: 15px; }
+h3 { font-size: 15px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; }
+h6 { font-size: 12px; }
+p { margin: 10px 0; }
+p img { padding: 0; max-width: 100%; }
+.container { width: 900px; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter,div.aligncenter { display: table; margin: 0 auto; text-align: center; }
+img.alignleft { margin: 5px 15px 10px 0; }
+img.alignright { margin: 5px 0 10px 10px; }
+img.aligncenter { margin: 10px auto; }
+.wp-caption { text-align: center; padding-top: 5px; margin-bottom: 10px !important; max-width: 100%; }
+.wp-caption img { max-width: 100%; }
+.wp-caption p.wp-caption-text{ font-size: 11px; line-height: 18px; padding: 0 4px 5px; margin: 0; }
+
+/* ------------------------------------------- START Layout CSS ------------------------------------------- */
+
+body { font: 13px/20px Arial,Helvetica,sans-serif; color: #212121; }
+#wrap { width: 100%;margin: 0 auto; padding: 0px; }
+#main { width: 1054px; margin: 10px auto; padding: 0px; background: #ffffff; }
+#content { float: left; width: 729px; margin-right: 25px; }
+#content-right { float: right; width: 300px; }
+#content-right a, #content-left a { color:#212121;}
+#content-left { float: left; width: 300px; }
+#sidebar { width: 1054px; margin:0px auto;}
+
+/* ------------------------------------------- START Header CSS ------------------------------------------- */
+#wrap-header { width: 100%; padding-bottom:10px; }
+#header { width: 1054px; display:table;margin: 0px auto;  }
+#header .logo { float: left; width: auto; }
+.head { float: left; }
+.head .title  a {font: 35px Tahoma; text-align:left; text-transform:uppercase;font-weight:bold; }
+.head .desc {font: 15px Arial; text-align:left; }
+.headright {float:right; margin-top:1px;}
+.headright a {font: 11px Arial; color: #333333; text-decoration:underline;}
+.headright span a {font: 11px Arial; color: #333333; text-decoration:underline; margin-left:10px;}
+.headright a:hover, .headright span a:hover {color:#0000ff;}
+/* ------------------------------------------- START Entry CSS ------------------------------------------- */
+
+.post { padding: 10px 0; overflow: hidden; }
+.post h2 { font-size: 15px; line-height: 15px; }
+.post h2 a { text-decoration: none; }
+.post h2 a:hover { color: #212121; text-decoration: none; }
+.post-2 { border-top:none; }
+.post .img { float:left; margin-right:10px; padding:2px; border: 1px solid #aaaaaa; }
+.post .img img.thumb { width: 80px; height: 68px; display: block; }
+.post p { line-height: 18px; margin-bottom:0; }
+.post .meta { margin: 0px; font-size: 11px; color: gray; }
+.meta a, .entry p a, .entry .wp_keywordlink_affiliate a, .entry .wp_keywordlink a, .reviewsnip a, .ddsg-wrapper a {color:#212121;}
+
+/* ------------------------------------------- START Entry CSS ------------------------------------------- */
+
+.entry { margin-bottom: 10px; }
+.entry .meta { margin: 0px; font-size: 11px; color: gray; }
+.entry img { max-width: 100%; }
+.entry p { line-height: 20px; }
+.entry blockquote { margin: 20px 20px; padding: 0 30px 0 20px; overflow: hidden; border-left: 10px solid #F7F7F7; }
+.entry ul, .entry ol { margin: 0 0 5px 3em; }
+.entry ol { list-style-type: decimal; }
+.entry ul { list-style-type: square; }
+.entry ul ul, .entry ul ol, .entry ol ol, .entry ol ul { margin: 0 0 0 20px; }
+h1.title { font-size: 18px; line-height: 19px; text-transform: capitalize;}
+.entry h2, .entry h3, .entry h4 { font-size: 13px; margin: 5px 0;}
+.entry table { width: 100%; margin: 1.0em 0; border-collapse: collapse; border-spacing: 0; }
+.entry table th { padding: 6px 3px; }
+.entry table td { padding: 3px 5px 3px 5px; }
+.entry .ads { margin-bottom: 10px; display: block; }
+.entry .ads span { font-size: 11px; margin-bottom:5px; text-align: left; display: block; }
+.endpost { float:right; display:block; margin:0px; }
+.reviewsnip { background: #efefef; font-size: 11px; padding: 3px 10px; float: left; text-transform: capitalize; }
+.gbr a img {height:60px; width:80px; padding:2px; margin:0px; text-align:center;border: 1px solid #aaaaaa;}
+.adstop {margin:10px 0px; max-height:450px; }
+.adsbottom {margin:10px 0px;}
+
+/* ------------------------------------------- START Gallery CSS ------------------------------------------- */
+
+.entry-gallery { text-align: left; }
+.entry-gallery h3.title { line-height: 25px; margin: 0 0 10px 0; padding-left: 10px; font-size: 13px; color: #fff; text-transform: capitalize; }
+.entry-gallery ul { text-align: center; list-style-type: none; margin: 0; }
+.entry-gallery ul li { float: left; margin-right: 10px; margin-bottom: 5px; }
+.entry-gallery ul li.img-4, .entry-gallery ul li.img-8, .entry-gallery ul li.img-12{ margin-right: 0px; }
+
+.entry .gallery { text-align: center; }
+.entry .gallery .gallery-item { display: inline-block; }
+.entry .gallery img { float: left; width: 140px; margin: 5px 5px 0px 5px; }
+.entry .gallery dl, .gallery dt { margin: 0; }
+.entry .gallery br+br, .entry .gallery dd.gallery-caption { display: none; }
+
+.attach-image-nav h3 { color:#000000; text-align:center;font-size:15px; line-height:25px; display: block; padding: 0px 5px; margin-bottom:15px; border-radius:4px;border: 1px solid #c0c0c0;}
+.attachment p { max-width: 100%; text-align: justify; }
+.attach-image img { width: 100%; height: auto; margin-top: 10px;}
+.attach-image-nav { margin-top: 10px; text-align: center; }
+.attach-image-nav img { display: inline-block; margin: 0 2px 2px 2px; padding:2px; width: 80px; height: 60px; border: 1px solid #aaaaaa;}
+
+table {width: 100%;}
+thead { background: #d8d8d8; line-height:28px; }
+thead > tr > th {font-weight:bold;}
+.ttitle, .ititle {text-transform: capitalize;}
+.tno {width:36px;padding-left: 5px;}
+.tdesc {width:108px;}
+
+.navigation {margin:20px 0px; text-transform: capitalize;text-align:center;}
+.navigation a {color:#333333;font-weight:normal;}
+.previous {float:left;text-align:left;}
+.next {float:right;text-align:right;}
+.nav-center {text-align:center; display:inline-block;}
+.previous:hover, .next:hover, .nav-center:hover {color:#000000;}
+
+.related_posts { width: 100%; margin: 10px 0; }
+.related_posts h3 { color: #ffffff; height: 25px; line-height: 25px; font-size: 12px; text-transform: capitalize; padding: 0 10px; }
+
+/* ------------------------------------------- START Sidebar CSS ------------------------------------------- */
+#wrap-sidebar { width: 100%; float:left; padding-top: 10px; border-top: 1px solid #3f78cd; }
+#sidebar-left { width:49%;float:left; }
+#sidebar-right{ width:49%;float:right; }
+h4.title  { height: 25px; line-height: 25px; font-size: 15px; text-transform: capitalize; font-weight:bold; margin-bottom: 8px; }
+h4.title span  { display: block; padding: 0px 5px; border-radius:4px; }
+.widget, .crp_related_widget { margin-bottom: 10px;}
+.widget_ads { margin-bottom: 10px;  }
+.widget .inner { color:#212121; }
+.widget .dox { color:#212121; }
+.widget .dox ul li {list-style: inside none circle; margin-left: 5px; max-height: 22px; overflow: hidden; padding-left: 1px;}
+.widget .dox ul li a { padding: 2px 0px; line-height: 18px;  }
+.widget ul, .crp_related_widget ul { color: #777777; overflow:hidden; text-align: left; }
+.widget ul li, .crp_related_widget ul li { list-style: inside none circle; margin-left: 5px; max-height: 22px; overflow: hidden; padding-left: 1px; }
+.widget ul li a, .crp_related_widget ul li a { padding: 2px 0px; line-height: 18px; }
+.widget ul li:hover { }
+#sidebar a { text-transform:capitalize;}
+#sidebar .recent ul { padding: 5px 0; }
+#sidebar .recent ul li .thumb { float: left; width: 60px; height: 40px; margin-right: 5px;padding:2px; border:1px solid #aaaaaa; }
+#sidebar .recent ul li { margin-bottom: 5px; color:#555555; font-size: 11px; line-height:13px; clear: both; overflow: hidden; }
+#sidebar .recent ul li h4{ font-size: 13px; line-height: 16px; }
+#sidebar .recent_title { font-size: 13px;line-height:15px;display:flex;margin:0px 0px 5px 0px; }
+#sidebar .recent .meta { margin: 5px 0; font-size: 11px; color: gray; }
+#sidebar .gallery ul { padding: 10px 0; text-align: center; }
+#sidebar .gallery ul li { float: left; margin-right: 10px; margin-bottom: 5px; }
+#sidebar .gallery ul li.img-2, #sidebar .gallery ul li.img-4, #sidebar .gallery ul li.img-6{ margin-right: 0px; }
+#sidebar .gallery ul li img { width: 145px; height: 110px; }
+.logo { margin: 0px 10px 0px 0px; float:left; }
+
+/* ------------------------------------------- START Footer CSS ------------------------------------------- */
+#wrap-footer { width: 100%; border-top: 1px solid #0000FF; }
+#footer { width: 1054px; margin:0px auto; color: #f2f2f2; }
+#footer .menu { font-size: 13px; overflow: hidden; padding: 1px 0px;  }
+#footer .menu ul li { float: left; margin-right: 10px; }
+#footer .menu ul li:after { content: " | "; margin-left: 10px; }
+#footer .menu ul li:last-child:after { content: " "; margin-left: 0; }
+#footer .copyright { font-size: 11px; padding: 0px; }
+#footer a { color: #f2f2f2; }
+.foot-title { float:right; display:inline; }
+.foot-title h3 { font-weight:normal; font-size:11px; }
+.adsfoot { margin:0px auto; display:table; }
+/* ------------------------------------------- START Menu CSS ------------------------------------------- */
+
+nav select { display: none; border: 1px solid #dfdfdf; padding: 3px; }
+#wrap-menu { width: 100%; border-bottom: 1px solid #cecece; border-top: 1px solid #8b8b8b; box-shadow: 0 3px 10px #000; }
+#main-menu { width: 1054px; height: 38px; line-height: 38px; font-size: 12px; font-weight: bold; text-align: center; overflow: hidden; margin:0px auto; }
+#main-menu .ihome { float:left; margin: 5px 8px 5px 0px; display: inline; } 
+#main-menu .main-menu { text-align: left; }
+#main-menu .main-menu ul { width: 100%; }
+#main-menu .main-menu li { float: left; text-align: center; }
+#main-menu .main-menu li:first-child { }
+#main-menu .main-menu li a { color: #FFFFFF; display: block; text-transform: capitalize; padding: 0 9px; overflow: hidden; }
+#main-menu .main-menu li a:hover { text-decoration: none; }
+#main-menu .main-menu li li a, #main-menu .main-menu li li a:link, #main-menu .main-menu li li a:visited { background: #f0f0f2; color: #000; position: relative; text-align:left; text-transform: capitalize; font-weight:normal;line-height:28px;width: 150px; padding: 0px 10px; border-bottom: 1px solid #dfdfdf; }
+#main-menu .main-menu li li a:hover,.main-menu li li a:active { color:#ffffff; }
+#main-menu .main-menu li li:first-child { border: none; }
+#main-menu .main-menu li li { border: none; }
+#main-menu .main-menu li ul{ height: auto; left: -9999px; position: absolute; width: 160px; z-index: 9999; margin: 0; }
+#main-menu .main-menu li ul a { width: 140px; }
+#main-menu .main-menu li ul ul { margin: -29px 0 0 169px; }
+#main-menu .main-menu li:hover>ul { left: auto; }
+#main-menu .main-menu li.current-menu-item a, #main-menu .main-menu li.current-post-parent a { }
+
+/* ------------------------------------------- START Search CSS ------------------------------------------- */
+.searchform { width:153px; background: #ffffff; border-radius:5px; margin-top:10px; }
+.searchform input {  width: 95px; border: none; font-size: 12px; line-height: 15px; padding-left: 10px; margin: 0; border-radius: 5px 0px 0px 5px; }
+.searchform button { border: none; float: right; font-size: 12px; line-height: 19px; margin: 0; color:#ffffff; border-radius: 0px 5px 5px 0px;}
+
+/* ------------------------------------------- START Pagenavi CSS ------------------------------------------- */
+
+.Nav { font-size: 12px; width: 100%; margin: 15px 0; color: #333333; }
+.Nav a { border: 1px solid #aaaaaa; color: #333333!important; background: #dadada; padding: 6px; border-radius: 4px; }
+.Nav a:visited { border: 1px solid #aaaaaa; background: #dadada; border-radius: 4px;}
+.Nav a:hover { background: #c0c0c0; text-decoration: none; border-radius: 4px;}
+.Nav span { background: #dadada; border: 1px solid #aaaaaa; margin-right: 3px; padding: 6px 5px; border-radius: 4px; }
+.Nav .on { background: #c0c0c0; border: 1px solid #aaaaaa; padding: 6px; border-radius: 4px; }
+
+.page-links { clear: both; margin : 15px 0px; }
+.page-links a, .page-links > span { background: #c0c0c0; border: 1px solid #aaaaaa; margin-right: 2px; padding: 3px 5px; }
+.page-links a { background: #dadada;border: 1px solid #aaaaaa; padding: 3px 5px; }
+.page-links a:hover, .page-links a:focus { background: #c0c0c0; border: 1px solid #aaaaaa; padding: 3px 5px; }
+.page-links > .page-links-title { border: 1px solid #aaaaaa; padding: 3px 5px; }
+.page-links > h4 { font-size:15px; margin-top: 15px; }
+
+/* ------------------------------------------- START Share CSS ------------------------------------------- */
+
+.social-container { margin: 15px 0px; width: 100%; }
+.SocialCustomMenu { margin: 0; }
+.SocialCustomMenu span { display: inline; padding: 5px; text-decoration: none; font-size: 0.95em; }
+.SocialCustomMenu a, .SocialCustomMenu a:visited { display: inline; padding: 5px; color: white!important; text-decoration: none; font-size: 0.95em; }
+.social-container .twitter { background-color: #00a0d1; border-radius: 4px;}
+.social-container .facebook { background-color: #3b5998; border-radius: 4px;}
+.social-container .googleplus { background-color: #db4a39; border-radius: 4px;}
+.social-container .sharetext { margin: 0px 0px 10px 0px; color:#212121; }
+
+/* ------------------------------------------- START Other CSS ------------------------------------------- */
+
+#wrap-breadcrumbs { width: 100%; box-shadow: 0px 0px 8px #282828;}
+.breadcrumbs { width: 1054px; margin:0px auto; color: #555555; font-size: 11px; font-weight: normal; line-height: 19px; overflow: hidden; }
+.breadcrumbs a { color: #555555!important; }
+
+/* ------------------------------------------- START Home CSS ------------------------------------------- */
+
+#featured { width: 100%; margin-bottom: 10px; }
+#featured .left { float: left; width: 610px; margin-right: 10px; position: relative; text-align: center; }
+#featured .left img { width: 100%; height: 250px; display: inline-block; }
+#featured .left .desc { position: absolute; top: 15px; right: 15px; padding: 10px; width: 60%; text-align: left; }
+#featured .left .desc h2 { font-size: 22px; line-height: 24px; }
+#featured .left .desc h2 a { color: #fff; }
+#featured .left .desc p { color: #fff; }
+#featured .right { float: left; width: 300px; }
+#featured .right h3.title  { height: 25px; line-height: 25px; font-size: 12px; text-transform: capitalize; margin-bottom: 10px; }
+#featured .right h3.title span  { padding-left: 10px; display: block; }
+#featured .bottom ul { width: 100%; text-align: center; margin-top: 3px; }
+#featured .bottom ul li { float: left; width: 145px; margin-right: 10px; position: relative; }
+#featured .bottom ul li .meta { position: absolute; top: 10px; right: 0; font-size: 11px; line-height: 11px; color: #fff; padding: 3px 10px; }
+#featured .bottom ul li .meta a { color: #fff; }
+#featured .bottom ul li h2 { font-size: 13px; line-height: 15px; color: #fff;}
+#featured .bottom ul li h2 a { color: #fff;}
+#featured .bottom ul li.img-6 { margin-right: 0px; }
+#featured .bottom ul li a .thumb.wp-post-image {width: 143px; border:1px solid #3b5998;}
+
+/* ------------------------------------------- START Kontak CSS ------------------------------------------- */
+
+.kontak {}
+.kontak form{margin:10px 0;}
+.kontak label {cursor:pointer;display: block;float: left;padding-right: 20px;width: 100px;}
+.kontak input, #kontak textarea {width: 214px;}
+.kontak textarea { height: 200px; width:75%; }
+.kontak input:focus, ol#kontak textarea:focus { background-color: #f2f3f6; border-color: #ff9800; }
+.error { color: #f00; }
+.kontak p .error { font-size: 12px; margin-left: 20px; }
+.kontak p.textarea .error {display: block;position: absolute;right: 0;top: 0;width: 100px;}
+.kontak p.screenReader { margin-bottom: 0; }
+.kontak p.inline input { width: auto; }
+.kontak p.inline label { display: inline; float: none; width: auto; }
+.kontak-box { width:100%; height:60px; margin:10px auto; display: block; background:#191970; }
+.kontak-button { display: block; margin:0px auto; padding: 5px 0px; text-align:center; }
+.kontak-text{ width: 220px; float:right; padding: 10px 0px; border-left:2px solid #ffffff; font-size:14px; text-align:center; color:#ffffff; }
+
+/* ------------------------------------------- START Responsive CSS ------------------------------------------- */
+
+@media only screen and ( max-width: 855px ) {
+img,video,object, .post .img img.thumb, #featured .left img { max-width: 100%; height: auto; }
+#wrap { width: 100%; }
+#main, #footer, #header, #main-menu, #sidebar, .breadcrumbs  { width: 99%; }
+#content { width: 525px; }
+.entry, .wp-caption, #featured .left { width: 100%; }
+#header .logo img{ height: 100%; }
+.headright { margin: 1px 5px 0 0; }
+.head { margin-left: 5px; }
+.adstop {max-height:50px;}
+}
+
+@media only screen and ( max-width: 769px ) {
+img,video,object, .post .img img.thumb, #featured .left img { max-width: 100%; height: auto; }
+nav ul,  #main-menu, #main-menu .ihome, #fb-comments  { display: none; }
+nav select { display: flex; width: 98%; height: 23px; margin: 5px auto; overflow: hidden; background: #EFEFEF; font-size: 12px; }
+#footer, #header, #sidebar { width: 99%; }
+#featured .right { display: none; }
+#header .logo, .head, .head .desc, .headright  { float: none; text-align: center; }
+.searchform {margin:10px auto 0px auto;}
+#header .logo img{ height: 100%; }
+#content, .entry, .wp-caption, #featured .left { width: 100%; }
+#content-right, #content-left { text-align: center; width: 100%; }
+.kontak-box { display: inline-block; }
+.kontak-text { width: 338px; }
+.entry .ads { margin: 0 auto 10px auto; }
+.adstop {max-height:90px;}
+#featured .bottom ul li, .entry-gallery ul li { float: none; display: inline-block; }
+#featured .left { float: none; margin-right: 0; }
+.post ul li, #featured .bottom ul li, .entry-gallery ul li, .entry .gallery img { margin: 0 5px 5px 5px !important; }
+#sidebar .gallery ul li  { margin-right: 10px !important; }
+.foot-title { float: none; }
+}
+
+@media only screen and ( max-width: 480px ) {
+#featured .left .desc p, .head .desc { display: none; }
+#sidebar-left, #sidebar-right, .crp_related ul li { width: 100% }
+.kontak-text { width: 300px; }
+.adstop {max-height:90px;}
+}
