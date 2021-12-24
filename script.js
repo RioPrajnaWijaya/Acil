@@ -3,6 +3,7 @@ let bar = document.querySelector('.bar');
 let heart = document.querySelector('#love');
 let school = document.querySelector('#school');
 let musics = document.querySelector('#music');
+let music = document.querySelector('.music');
 
 menu.onclick = () => {
     menu.classList.toggle('fa-times');
@@ -18,7 +19,7 @@ school.onclick = () => {
 }
 
 musics.onclick = () => {
-    alert("Free Music to Accompany Your Study");
+    music.play();
 }
 
 let section = document.querySelectorAll('section');
